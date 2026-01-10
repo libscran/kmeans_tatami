@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(tatami_tatami 4.0.4 CONFIG REQUIRED)
+find_dependency(ltla_kmeans 4.0.0 CONFIG REQUIRED)
+find_dependency(ltla_sanisizer 0.1.0 CONFIG REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/libscran_kmeans_tatamiTargets.cmake")
