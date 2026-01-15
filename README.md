@@ -41,15 +41,15 @@ If you're using CMake, you just need to add something like this to your `CMakeLi
 include(FetchContent)
 
 FetchContent_Declare(
-  kmeans 
+  kmeans_tatami
   GIT_REPOSITORY https://github.com/libscran/kmeans_tatami
   GIT_TAG master # or any version of interest
 )
 
-FetchContent_MakeAvailable(kmeans)
+FetchContent_MakeAvailable(kmeans_tatami)
 ```
 
-Then you can link to **kmeans** to make the headers available during compilation:
+Then you can link to **kmeans_tatami** to make the headers available during compilation:
 
 ```cmake
 # For executables:
