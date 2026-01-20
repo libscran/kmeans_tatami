@@ -16,8 +16,8 @@ target_include_directories(kmeans_tatami INTERFACE
 target_compile_features(kmeans_tatami INTERFACE cxx_std_17)
 
 # Dependencies
-option(KMEANS_FETCH_EXTERN "Automatically fetch CppKmeans's external dependencies." ON)
-if(KMEANS_FETCH_EXTERN)
+option(KMEANS_TATAMI_FETCH_EXTERN "Automatically fetch kmeans_tatami's external dependencies." ON)
+if(KMEANS_TATAMI_FETCH_EXTERN)
     add_subdirectory(extern)
 else()
     find_package(ltla_kmeans 4.0.0 CONFIG REQUIRED)

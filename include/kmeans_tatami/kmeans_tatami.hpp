@@ -129,6 +129,9 @@ private:
     MatrixPointer_ my_matrix;
 
 public:
+    /**
+     * @param matrix Raw or smart pointer to a `tatami::Matrix`.
+     */
     Matrix(MatrixPointer_ matrix) : my_matrix(std::move(matrix)) {
         // Making sure that we can cast to KIndex_.
         // tatami extents are guaranteed to be positive and fit in a size_t, so we attest that.
