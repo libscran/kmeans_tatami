@@ -114,7 +114,8 @@ public:
  * @tparam KData_ Numeric type of the data for **kmeans**.
  * @tparam TValue_ Numeric type of matrix values for **tatami**.
  * @tparam TIndex_ Integer type of the row/column indices for **tatami**.
- * @tparam Matrix_ Class of the **tatami** matrix.
+ * @tparam Matrix_ Pointer to an instance to a `tatami::Matrix` or one of its subclasses.
+ * This may be a raw or smart pointer.
  *
  * @brief **kmeans**-compatible wrapper around a **tatami** matrix.
  *
@@ -122,13 +123,13 @@ public:
  * The idea is to enable the use of arbitrary **tatami** matrix representations in **kmeans** functions,
  * e.g., to support clustering from a file-backed matrix.
  */
-template<typename KIndex_, typename KData_, typename TValue_, typename TIndex_, class Matrix_ = tatami::Matrix<TValue_, TIndex_> >
+template<typename KIndex_, typename KData_, typename TValue_, typename TIndex_, class MatrixPointer_ = std::shared_ptr<const tatami::Matrix<TValue_, TIndex_> > >
 class Matrix final : public kmeans::Matrix<KIndex_, KData_> {
 private:
-    std::shared_ptr<tatami::Matrix<TValue_, TIndex_> > my_matrix;
+    MatrixPointer_ my_matrix;
 
 public:
-    Matrix(std::shared_ptr<tatami::Matrix<TValue_, TIndex_> > matrix) : my_matrix(std::move(matrix)) {
+    Matrix(MatrixPointer_ matrix) : my_matrix(std::move(matrix)) {
         // Making sure that we can cast to KIndex_.
         // tatami extents are guaranteed to be positive and fit in a size_t, so we attest that.
         sanisizer::cast<KIndex_>(sanisizer::attest_gez(sanisizer::attest_max_by_type<std::size_t>(my_matrix->ncol())));
