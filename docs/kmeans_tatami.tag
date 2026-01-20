@@ -16,6 +16,13 @@
     <templarg>typename TIndex_</templarg>
     <templarg>class MatrixPointer_</templarg>
     <base>kmeans::Matrix&lt; KIndex_, KData_ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>Matrix</name>
+      <anchorfile>classkmeans__tatami_1_1Matrix.html</anchorfile>
+      <anchor>a5e888a185e70ce65c410cf5de8418982</anchor>
+      <arglist>(MatrixPointer_ matrix, bool transposed=false)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>kmeans_tatami</name>
