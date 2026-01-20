@@ -14,7 +14,7 @@
     <templarg>typename KData_</templarg>
     <templarg>typename TValue_</templarg>
     <templarg>typename TIndex_</templarg>
-    <templarg>class Matrix_</templarg>
+    <templarg>class MatrixPointer_</templarg>
     <base>kmeans::Matrix&lt; KIndex_, KData_ &gt;</base>
   </compound>
   <compound kind="namespace">

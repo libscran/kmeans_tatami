@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['matrix_0',['Matrix',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans::Matrix&lt; typename Index_, typename Data_ &gt;'],['../classkmeans__tatami_1_1Matrix.html',1,'kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, Matrix_ &gt;'],['https://tatami-inc.github.io/tatami/classtatami_1_1Matrix.html',1,'tatami::Matrix&lt; typename Value_, typename Index_ &gt;']]],
+  ['matrix_0',['Matrix',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans::Matrix&lt; typename Index_, typename Data_ &gt;'],['../classkmeans__tatami_1_1Matrix.html',1,'kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, MatrixPointer_ &gt;'],['https://tatami-inc.github.io/tatami/classtatami_1_1Matrix.html',1,'tatami::Matrix&lt; typename Value_, typename Index_ &gt;']]],
   ['matrix_3c_20index_5f_2c_20data_5f_20_3e_1',['Matrix&lt; Index_, Data_ &gt;',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans']]],
   ['matrix_3c_20kindex_5f_2c_20kdata_5f_20_3e_2',['Matrix&lt; KIndex_, KData_ &gt;',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans']]],
   ['matrix_3c_20outputvalue_5f_2c_20index_5f_20_3e_3',['Matrix&lt; OutputValue_, Index_ &gt;',['https://tatami-inc.github.io/tatami/classtatami_1_1Matrix.html',1,'tatami']]],

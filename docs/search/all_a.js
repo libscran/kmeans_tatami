@@ -4,7 +4,7 @@ var searchData=
   ['make_5fdelayedsubset_1',['make_DelayedSubset',['https://tatami-inc.github.io/tatami/namespacetatami.html#af62b9d27c0c501e5b65e52ce37f0ee5d',1,'tatami']]],
   ['make_5fdelayedsubset_2ehpp_2',['make_DelayedSubset.hpp',['https://tatami-inc.github.io/tatami/make__DelayedSubset_8hpp.html',1,'']]],
   ['math_5fhelpers_2ehpp_3',['math_helpers.hpp',['https://tatami-inc.github.io/tatami/math__helpers_8hpp.html',1,'']]],
-  ['matrix_4',['Matrix',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans::Matrix&lt; typename Index_, typename Data_ &gt;'],['../classkmeans__tatami_1_1Matrix.html',1,'kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, Matrix_ &gt;'],['https://tatami-inc.github.io/tatami/classtatami_1_1Matrix.html',1,'tatami::Matrix&lt; typename Value_, typename Index_ &gt;']]],
+  ['matrix_4',['Matrix',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans::Matrix&lt; typename Index_, typename Data_ &gt;'],['../classkmeans__tatami_1_1Matrix.html',1,'kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, MatrixPointer_ &gt;'],['https://tatami-inc.github.io/tatami/classtatami_1_1Matrix.html',1,'tatami::Matrix&lt; typename Value_, typename Index_ &gt;']]],
   ['matrix_2ehpp_5',['Matrix.hpp',['https://libscran.github.io/kmeans/Matrix_8hpp.html',1,'(Global Namespace)'],['https://tatami-inc.github.io/tatami/Matrix_8hpp.html',1,'(Global Namespace)']]],
   ['matrix_3c_20index_5f_2c_20data_5f_20_3e_6',['Matrix&lt; Index_, Data_ &gt;',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans']]],
   ['matrix_3c_20kindex_5f_2c_20kdata_5f_20_3e_7',['Matrix&lt; KIndex_, KData_ &gt;',['https://libscran.github.io/kmeans/classkmeans_1_1Matrix.html',1,'kmeans']]],

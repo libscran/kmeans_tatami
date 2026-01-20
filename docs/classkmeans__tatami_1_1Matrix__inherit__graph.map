@@ -1,5 +1,5 @@
-<map id="kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, Matrix_ &gt;" name="kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, Matrix_ &gt;">
-<area shape="rect" id="Node000001" title="kmeans&#45;compatible wrapper around a tatami matrix." alt="" coords="5,94,183,150"/>
-<area shape="rect" id="Node000002" href="/github/workspace/docs/kmeans.tag$classkmeans_1_1Matrix.html" title=" " alt="" coords="14,5,174,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,61,97,93,91,93,91,61"/>
+<map id="kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, MatrixPointer_ &gt;" name="kmeans_tatami::Matrix&lt; KIndex_, KData_, TValue_, TIndex_, MatrixPointer_ &gt;">
+<area shape="rect" id="Node000001" title="kmeans&#45;compatible wrapper around a tatami matrix." alt="" coords="5,94,188,150"/>
+<area shape="rect" id="Node000002" href="/github/workspace/docs/kmeans.tag$classkmeans_1_1Matrix.html" title=" " alt="" coords="17,5,176,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,61,99,93,94,93,94,61"/>
 </map>
