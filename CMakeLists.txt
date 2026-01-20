@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
 
 project(kmeans_tatami
-    VERSION 0.1.0
+    VERSION 0.1.1
     DESCRIPTION "tatami bindings for the k-means library"
     LANGUAGES CXX)
 

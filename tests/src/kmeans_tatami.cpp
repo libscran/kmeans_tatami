@@ -109,41 +109,40 @@ TEST(Matrix, Transposed) {
     std::iota(buffer.begin(), buffer.end(), 0);
 
     auto dmat = std::make_shared<tatami::DenseMatrix<double, int, std::vector<double> > >(NR, NC, buffer, true);
-    kmeans_tatami::Matrix<int, double, double, int> tmat(dmat);
-    EXPECT_EQ(tmat.num_dimensions(), NR);
-    EXPECT_EQ(tmat.num_observations(), NC);
+    kmeans_tatami::Matrix<int, double, double, int> tmat(dmat, true);
+    EXPECT_EQ(tmat.num_dimensions(), NC);
+    EXPECT_EQ(tmat.num_observations(), NR);
 
-    auto ext = dmat->dense_column();
     {
-        std::vector<double> tmp(NR), tmp2(NR);
+        std::vector<double> tmp(NC), tmp2(NC);
         auto work = tmat.new_extractor();
-        for (int c = 0; c < NC; ++c) {
-            ext->fetch(c, tmp.data());
-            auto ptr = work->get_observation(c);
-            std::copy_n(ptr, NR, tmp2.begin());
+        for (int i = 0; i < NR; ++i) {
+            std::copy_n(buffer.data() + static_cast<std::size_t>(i) * NC, NC, tmp.data());
+            auto ptr = work->get_observation(i);
+            std::copy_n(ptr, NC, tmp2.begin());
             EXPECT_EQ(tmp, tmp2);
         }
     }
 
     {
-        std::vector<double> tmp(NR), tmp2(NR);
+        std::vector<double> tmp(NC), tmp2(NC);
         auto work = tmat.new_extractor(7, 15);
-        for (int c = 7; c < 15; ++c) {
-            ext->fetch(c, tmp.data());
+        for (int i = 7; i < 15; ++i) {
+            std::copy_n(buffer.data() + static_cast<std::size_t>(i) * NC, NC, tmp.data());
             auto ptr = work->get_observation();
-            std::copy_n(ptr, NR, tmp2.begin());
+            std::copy_n(ptr, NC, tmp2.begin());
             EXPECT_EQ(tmp, tmp2);
         }
     }
 
     {
-        std::vector<double> tmp(NR), tmp2(NR);
+        std::vector<double> tmp(NC), tmp2(NC);
         std::vector<int> predictions { 6, 8, 8, 18, 3, 4, 6, 15, 4, 3, 15 };
         auto work = tmat.new_extractor(predictions.data(), predictions.size());
-        for (auto c : predictions) {
-            ext->fetch(c, tmp.data());
+        for (auto i : predictions) {
+            std::copy_n(buffer.data() + static_cast<std::size_t>(i) * NC, NC, tmp.data());
             auto ptr = work->get_observation();
-            std::copy_n(ptr, NR, tmp2.begin());
+            std::copy_n(ptr, NC, tmp2.begin());
             EXPECT_EQ(tmp, tmp2);
         }
     }
